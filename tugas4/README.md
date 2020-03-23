@@ -137,9 +137,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
      Digunakan untuk meletakkan (upload) file ke server.<br>
      Format request (tidak dikirim ke server) :
       ```
-      {
-          put <no>
-      }
+      put <no>
       ```
       Format request yang dikirim ke server :
       ```
@@ -152,3 +150,51 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
       }
       ```
 3. cara melakukan request dan responsenya
+   - help<br>
+     Cara melakukan request :
+     - pastikan server.py telah berjalan.
+     - jalankan client.py.
+     - ketikkan 'help' pada terminal tanpa menggunakan tanda petik ' '
+     
+     Response :<br>
+     Berikut screenshot request help dan responsenya.<br>
+   - lss<br>
+     Cara melakukan request :
+     - pastikan server.py telah berjalan.
+     - jalankan client.py.
+     - ketikkan 'lss' pada terminal tanpa menggunakan tanda petik ' '
+     
+     Response :<br>
+     Berikut screenshot request lss dan responsenya.<br>
+   - get<br>
+     Cara melakukan request :
+     - pastikan server.py telah berjalan.
+     - jalankan client.py.
+     - ketikkan 'get < no >' pada terminal tanpa menggunakan tanda petik ' '. < no > berisi nomor urutan file berdasarkan response lss. Misal 'get 2'
+     
+     Response :<br>
+     Berikut screenshot request get dan responsenya.<br>
+   - exit<br>
+     Cara melakukan request :
+     - pastikan server.py telah berjalan.
+     - jalankan client.py.
+     - ketikkan 'exit' pada terminal tanpa menggunakan tanda petik ' '
+     
+     Response :<br>
+     Berikut screenshot request exit dan responsenya.<br>
+   - ls<br>
+     Cara melakukan request :
+     - pastikan server.py telah berjalan.
+     - jalankan client.py.
+     - ketikkan 'ls' pada terminal tanpa menggunakan tanda petik ' '
+     
+     Response :<br>
+     Berikut screenshot request ls dan responsenya.<br>
+   - put<br>
+     Cara melakukan request :
+     - pastikan server.py telah berjalan.
+     - jalankan client.py.
+     - ketikkan 'put < no >' pada terminal tanpa menggunakan tanda petik ' '. < no > berisi nomor urutan file berdasarkan response ls. Misal 'put 2'
+     
+     Response :<br>
+     Berikut screenshot request put dan responsenya.<br>
