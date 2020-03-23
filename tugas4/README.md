@@ -158,7 +158,8 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
      
      Response :<br>
      Berikut screenshot request help dan responsenya.<br>
-     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/help.jpg" width="600">
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/help.jpg" width="600"><br>
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/help_json.jpg" width="600">
    - lss<br>
      Cara melakukan request :
      - pastikan server.py telah berjalan.
@@ -167,7 +168,8 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
      
      Response :<br>
      Berikut screenshot request lss dan responsenya.<br>
-     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/lss.jpg" width="600">
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/lss.jpg" width="600"><br>
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/lss_json.jpg" width="600">
    - get<br>
      Cara melakukan request :
      - pastikan server.py telah berjalan.
@@ -177,7 +179,8 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
      Response :<br>
      Berikut screenshot request get dan responsenya.<br>
      <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/get.jpg" width="600"><br>
-     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/get_2.jpg" width="600">
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/get_2.jpg" width="600"><br>
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/get_json.jpg" width="600">
    - exit<br>
      Cara melakukan request :
      - pastikan server.py telah berjalan.
@@ -186,7 +189,8 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
      
      Response :<br>
      Berikut screenshot request exit dan responsenya.<br>
-     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/exit.jpg" width="600">
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/exit.jpg" width="600"><br>
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/exit_json.jpg" width="600">
    - ls<br>
      Cara melakukan request :
      - pastikan server.py telah berjalan.
@@ -205,4 +209,5 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
      Response :<br>
      Berikut screenshot request put dan responsenya.<br>
      <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/put.jpg" width="600"><br>
-     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/put_2.jpg" width="600">
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/put_2.jpg" width="600"><br>
+     <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas4/screenshots/put_json.jpg" width="600">
