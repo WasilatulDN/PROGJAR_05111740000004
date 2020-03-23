@@ -21,9 +21,9 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
         'content' : "Body dari request/response"
     }
     ```
-    Terdapat empat tipe konten yaitu :
+    Terdapat empat tipe konten. Tipe konten memengaruhi bagaimana request atau response tersebut diperlakukan. Empat tipe konten tersebut yaitu :
     - Command
-      Digunakan oleh client saat mengirim **request** ke server. Command yang tersedia untuk dikirim ke server adalah **get, lss, help, dan exit**. Sehingga format JSON yang digunakan adalah sebagai berikut :
+      Tipe command akan diperlakukan sesuai dengan konten commandnya. Digunakan oleh client saat mengirim **request** ke server. Command yang tersedia untuk dikirim ke server adalah **get, lss, help, dan exit**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
           'type' : "command"
@@ -31,7 +31,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
       }
       ```
     - Message
-      Digunakan oleh server saat mengirim **response** ke client. Server akan mengirim message untuk command **lss dan help**. Sehingga format JSON yang digunakan adalah sebagai berikut :
+      Tipe message akan diperlakukan dengan menampilkan kontennya ke layar. Digunakan oleh server saat mengirim **response** ke client. Server akan mengirim message untuk command **lss dan help**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
           'type' : "message"
@@ -39,7 +39,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
       }
       ```
     - File
-      Digunakan untuk pengiriman **file** baik dari server ke client maupun client ke server. Untuk pengiriman server ke client digunakan pada saat client mengambil (download) file dari server sebagai response dari command **get**. Sedangkan untuk pengiriman client ke server digunakan pada saat client meletakkan (upload) file ke server meggunakan command **put**. Sehingga format JSON yang digunakan adalah sebagai berikut :
+      Tipe file akan diperlakukan dengan menuliskan kontennya ke file binary. Digunakan untuk pengiriman **file** baik dari server ke client maupun client ke server. Untuk pengiriman server ke client digunakan pada saat client mengambil (download) file dari server sebagai response dari command **get**. Sedangkan untuk pengiriman client ke server digunakan pada saat client meletakkan (upload) file ke server meggunakan command **put**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
           'type' : "file"
@@ -50,7 +50,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
       }
       ```
     - Terminate
-      Digunakan oleh server saat mengirim response ke client khusus untuk command exit. Sehingga format JSON yang digunakan adalah sebagai berikut :
+      Tipe command akan diperlakukan dengan mengakhiri koneksi client dengan server. Digunakan oleh server saat mengirim response ke client khusus untuk command **exit**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
           'type' : "terminate"
@@ -58,4 +58,97 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
       }
       ```
 
-2. Daftar fitur, cara melakukan request dan responsenya
+2. Daftar fitur
+   - help<br>
+     Digunakan untuk menampilkan daftar command yang bisa dilakukan oleh client beserta kegunaan dari command tersebut.<br>
+     Format request (dikirim ke server) :
+      ```
+      {
+          'type' : "command"
+          'content' : "help"
+      }
+      ```
+      Format response (diterima oleh client) :
+      ```
+      {
+          'type' : "message"
+          'content' : teks cara menggunakan protokol
+      }
+      ```
+   - lss<br>
+     Digunakan untuk menampilkan daftar file yang ada pada server.<br>
+     Format request (dikirim ke server) :
+      ```
+      {
+          'type' : "command"
+          'content' : "lss"
+      }
+      ```
+      Format response (diterima oleh client) :
+      ```
+      {
+          'type' : "message"
+          'content' : list file pada server
+      }
+      ```
+   - get<br>
+     Digunakan untuk mengambil (download) file dari server.<br>
+     Format request (dikirim ke server) :
+      ```
+      {
+          'type' : "command"
+          'content' : "get <no>"
+      }
+      ```
+      Format response (diterima oleh client) :
+      ```
+      {
+          'type' : "file"
+          'content' : {
+                          'filename' : nama file,
+                          'data' : base64 dari binary isi file
+                      }
+      }
+      ```
+   - exit<br>
+     Digunakan untuk memutus koneksi dengan server.<br>
+     Format request (dikirim ke server) :
+      ```
+      {
+          'type' : "command"
+          'content' : "exit"
+      }
+      ```
+      Format response (diterima oleh client) :
+      ```
+      {
+          'type' : "terminate"
+          'content' : "terminate"
+      }
+      ```
+   - ls<br>
+     Digunakan untuk menampilkan daftar file yang ada pada client. ls merupakan command lokal (tidak dikirim ke server).<br>
+     Format request (tidak dikirim ke server) :
+      ```
+      ls
+      ```
+      Format response : list file pada client.
+   - put<br>
+     Digunakan untuk meletakkan (upload) file ke server.<br>
+     Format request (tidak dikirim ke server) :
+      ```
+      {
+          put <no>
+      }
+      ```
+      Format request yang dikirim ke server :
+      ```
+      {
+          'type' : "file"
+          'content' : {
+                          'filename' : nama file,
+                          'data' : base64 dari binary isi file
+                      }
+      }
+      ```
+3. cara melakukan request dan responsenya
