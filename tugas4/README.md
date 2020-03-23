@@ -158,6 +158,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
      
      Response :<br>
      Berikut screenshot request help dan responsenya.<br>
+     <img src="link di github" width="600">
    - lss<br>
      Cara melakukan request :
      - pastikan server.py telah berjalan.
