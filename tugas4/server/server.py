@@ -53,6 +53,8 @@ class ProcessTheClient(threading.Thread):
 
 	def sendMessage(self,message:str):
 		connection = self.connection
+		print('dikirim : ')
+		print(message)
 		connection.sendall(message.encode())
 		connection.sendall(b'*done*')
 		return
@@ -72,9 +74,10 @@ class ProcessTheClient(threading.Thread):
 			if not message.decode()[-6:] == '*done*' :
 				data = connection.recv(32)
 				message+=data
-				print(message.decode())
 			else:
 				break
+		print('diterima : ')
+		print(message[:-6])
 		return message.decode()[:-6]
 
 	def updateFileList(self)->None:
@@ -93,10 +96,10 @@ class ProcessTheClient(threading.Thread):
 		self.updateFileList()
 		command = command.split(' ')
 		args = ''
-		print(command)
+		# print(command)
 		if len(command) > 1:
 			args = command[1]
-		print(command,args)
+		# print(command,args)
 		command = command[0]
 		if command == 'lss':
 			message = self.file_names
@@ -113,7 +116,7 @@ class ProcessTheClient(threading.Thread):
 			'''
 			msg_type = 'message'
 		elif command == 'get':
-			print(self.file_list, args)
+			# print(self.file_list, args)
 			filename = self.file_list[int(args)-1]
 			filedata = {
 				'filename': filename,
@@ -124,6 +127,7 @@ class ProcessTheClient(threading.Thread):
 			filedata['data'] = base64.b64encode(image).decode()
 			binarystream.close()
 			message = json.dumps(filedata)
+			# print(message)
 			msg_type = 'file'
 		elif command == 'exit':
 			message = 'terminate'
