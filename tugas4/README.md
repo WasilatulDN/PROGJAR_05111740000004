@@ -21,9 +21,9 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
         'content' : "Body dari request/response"
     }
     ```
-    Terdapat tiga tipe konten yaitu :
+    Terdapat empat tipe konten yaitu :
     - Command
-      Digunakan oleh client saat mengirim request ke server. Command yang tersedia untuk dikirim ke server adalah get, lss, help, dan exit. Sehingga format JSON yang digunakan adalah sebagai berikut :
+      Digunakan oleh client saat mengirim **request** ke server. Command yang tersedia untuk dikirim ke server adalah **get, lss, help, dan exit**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
           'type' : "command"
@@ -31,7 +31,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
       }
       ```
     - Message
-      Digunakan oleh server saat mengirim response ke client. Server akan mengirim message untuk command lss dan help. Sehingga format JSON yang digunakan adalah sebagai berikut :
+      Digunakan oleh server saat mengirim **response** ke client. Server akan mengirim message untuk command **lss dan help**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
           'type' : "message"
@@ -39,7 +39,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
       }
       ```
     - File
-      Digunakan untuk pengiriman baik dari server ke client maupun client ke server. Untuk pengiriman server ke client digunakan pada saat client mengambil (download) file dari server. Sedangkan untuk pengiriman client ke server digunakan pada saat client meletakkan (upload) file ke server. Sehingga format JSON yang digunakan adalah sebagai berikut :
+      Digunakan untuk pengiriman **file** baik dari server ke client maupun client ke server. Untuk pengiriman server ke client digunakan pada saat client mengambil (download) file dari server sebagai response dari command **get**. Sedangkan untuk pengiriman client ke server digunakan pada saat client meletakkan (upload) file ke server meggunakan command **put**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
           'type' : "file"
@@ -58,6 +58,4 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
       }
       ```
 
-2. Daftar fitur
-3. Cara melakukan request
-4. Respon yang didapat
+2. Daftar fitur, cara melakukan request dan responsenya
