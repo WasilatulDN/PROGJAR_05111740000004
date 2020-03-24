@@ -22,7 +22,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
     }
     ```
     Terdapat empat tipe konten. Tipe konten memengaruhi bagaimana request atau response tersebut diperlakukan. Empat tipe konten tersebut yaitu :
-    - Command
+    - Command<br>
       Tipe command akan diperlakukan sesuai dengan konten commandnya. Digunakan oleh client saat mengirim **request** ke server. Command yang tersedia untuk dikirim ke server adalah **get, lss, help, dan exit**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
@@ -30,7 +30,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
           'content' : "get <no> / lss / help / exit"
       }
       ```
-    - Message
+    - Message<br>
       Tipe message akan diperlakukan dengan menampilkan kontennya ke layar. Digunakan oleh server saat mengirim **response** ke client. Server akan mengirim message untuk command **lss dan help**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
@@ -38,7 +38,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
           'content' : "teks cara menggunakan protokol atau list daftar file pada server"
       }
       ```
-    - File
+    - File<br>
       Tipe file akan diperlakukan dengan menuliskan kontennya ke file binary. Digunakan untuk pengiriman **file** baik dari server ke client maupun client ke server. Untuk pengiriman server ke client digunakan pada saat client mengambil (download) file dari server sebagai response dari command **get**. Sedangkan untuk pengiriman client ke server digunakan pada saat client meletakkan (upload) file ke server meggunakan command **put**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
@@ -49,7 +49,7 @@ Seluruh komunikasi antara server dan client (request dan response) menggunakan f
                       }
       }
       ```
-    - Terminate
+    - Terminate<br>
       Tipe command akan diperlakukan dengan mengakhiri koneksi client dengan server. Digunakan oleh server saat mengirim response ke client khusus untuk command **exit**. Sehingga format JSON yang digunakan adalah sebagai berikut :
        ```
       {
