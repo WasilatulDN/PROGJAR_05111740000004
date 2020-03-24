@@ -36,6 +36,7 @@ class ProcessTheClient(threading.Thread):
 		message = self.prepareMessage('Protokol WFTP (VER α-ARI). Ketik `help` untuk melihat daftar command. Ketik `exit` untuk memutus koneksi.')
 		self.sendMessage(message)
 		while True:
+			self.updateFileList()
 			response_json = self.receiveMessage()
 			response = json.loads(response_json)
 			if response['type'] == 'command':
@@ -93,7 +94,6 @@ class ProcessTheClient(threading.Thread):
 				i += 1
 
 	def executeCommand(self,command:str)->str:
-		self.updateFileList()
 		command = command.split(' ')
 		args = ''
 		# print(command)
@@ -102,6 +102,7 @@ class ProcessTheClient(threading.Thread):
 		# print(command,args)
 		command = command[0]
 		if command == 'lss':
+			self.updateFileList()
 			message = self.file_names
 			msg_type = 'message'
 		elif command == 'help':
