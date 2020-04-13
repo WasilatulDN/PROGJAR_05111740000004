@@ -9,3 +9,7 @@ Buatlah
 5. Cobalah dengan telnet pada port 10001, dengan cara mengirimkan string GET<spasi>/<spasi>HTTP/1.0<enter><enter> Harusnya mereply dengan yang sama pada point nomor 4
 6. Bukalah chrome web browser, aktifkan developer mode, bagian network
 7. bukalah alamat http://127.0.0.1:10001
+### Screenshot web browser
+  <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas6/screenshots/ss_browser.jpg" width="600"><br>
+### Screenshot telnet
+  <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas6/screenshots/ss_telnet.jpg" width="600"><br>
