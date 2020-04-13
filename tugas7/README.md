@@ -26,3 +26,29 @@ Performance test sederhana, hanya bisa dilakukan di linux/unix based
 | 9 | 100 | 10 | 46.184 | 100 | 0 | 16800 | 2.17 | 4618.442 | 461.844 | 0.36 |
 | 10 | 100 | 50 | 20.714 | 100 | 0 | 16800 | 4.83 | 10356.801 | 207.136 | 0.79 |
 | 11 | 100 | 100 | 48.288 | 100 | 0 | 16800 | 2.07 | 48288.315 | 482.883 | 0.34 |
+
+ **\*across all concurrent requests**
+ 
+ ## Screenshot
+- Screenshot jumlah request 10 konkurensi 1
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_10-1.jpg" width="600"><br>
+- Screenshot jumlah request 10 konkurensi 5
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_10-5.jpg" width="600"><br>
+- Screenshot jumlah request 10 konkurensi 10
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_10-10.jpg" width="600"><br>
+- Screenshot jumlah request 50 konkurensi 1
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_50-1.jpg" width="600"><br>
+- Screenshot jumlah request 50 konkurensi 10
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_50-10.jpg" width="600"><br>
+- Screenshot jumlah request 50 konkurensi 30
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_50-30.jpg" width="600"><br>
+- Screenshot jumlah request 50 konkurensi 50
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_50-50.jpg" width="600"><br>
+- Screenshot jumlah request 100 konkurensi 1
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_100-1.jpg" width="600"><br>
+- Screenshot jumlah request 100 konkurensi 10
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_100-10.jpg" width="600"><br>
+- Screenshot jumlah request 100 konkurensi 50
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_100-50.jpg" width="600"><br>
+- Screenshot jumlah request 100 konkurensi 100
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas7/screenshots/ss_100-100.jpg" width="600"><br>
