@@ -10,3 +10,8 @@ Buatlah
 5. Modifikasilah agar server dapat membalas dengan isi
     - semua  header yang dikirim dari browser
     - Yang anda isikan di form pada saat mengisi pada poin nomor 5, misalkan mengisi “ISILAH” maka server akan mereply dengan “ISILAH” juga , dan bukan ‘kosong’
+
+### Screenshot tampilan form
+  <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas8/screenshots/ss_form.jpg" width="600"><br>
+### Screenshot respon dari server
+  <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas8/screenshots/ss_response.jpg" width="600"><br>
