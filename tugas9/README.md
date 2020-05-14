@@ -58,7 +58,7 @@ Perbandingan performa server asyncronous dengan server thread
 
 ## Screenshot thread server
 - Screenshot thread server konkurensi 1
-<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas9/screenshots/thread_1.jpg" width="600"><br>
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas9/screenshots/thread_1.jpg" width="650"><br>
 - Screenshot thread server konkurensi 10
 <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas9/screenshots/thread_10.jpg" width="600"><br>
 - Screenshot thread server konkurensi 30
