@@ -14,7 +14,7 @@ Perbandingan performa server asyncronous menggunakan load balancer dengan server
 ## Hasil pengujian asyncronous server dengan load balancer
 
 | No test | Concurrency level | Time taken for test [secs] | Complete request | Failed request | Total transferred [bytes] | Request per second [#/sec] | Time per request [ms] | Transfer rate [Kb/sec] |
-| :---: |  :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: |  :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | 1 | 6.347 | 1000 | 0 | 122000 | 157.57 | 6.347 | 18.77 |
 | 2 | 10 | 4.315 | 1000 | 0 | 122000 | 231.77 | 4.315 | 27.61 |
 | 3 | 30 | 3.994 | 1000 | 0 | 122000 | 250.39 | 3.994 | 29.83 |
@@ -27,7 +27,7 @@ Perbandingan performa server asyncronous menggunakan load balancer dengan server
 ## Hasil pengujian thread server
 
 | No test | Concurrency level | Time taken for test [secs] | Complete request | Failed request | Total transferred [bytes] | Request per second [#/sec] | Time per request [ms] | Transfer rate [Kb/sec] |
-| :---: |  :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: |  :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | 1 | 1132.270 | 1000 | 0 | 122000 | 0.88 | 1132.270 | 0.11 |
 | 2 | 10 | 455.915 | 1000 | 0 | 122000 | 2.19 | 455.915 | 0.26 |
 | 3 | 30 | 492.000 | 1000 | 0 | 122000 | 2.03 | 492.000 | 0.24 |
@@ -64,7 +64,7 @@ Perbandingan performa server asyncronous menggunakan load balancer dengan server
 
 ## Screenshot thread server
 - Screenshot thread server konkurensi 1
-<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas10/screenshots/thread_1.jpg" width="600"><br>
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas10/screenshots/thread_1.jpg" width="650"><br>
 - Screenshot thread server konkurensi 10
 <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas10/screenshots/thread_10.jpg" width="600"><br>
 - Screenshot thread server konkurensi 30
