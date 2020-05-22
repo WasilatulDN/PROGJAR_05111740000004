@@ -14,7 +14,7 @@ Perbandingan performa server asyncronous dengan server thread
 ## Hasil pengujian asyncronous server
 
 | No test | Concurrency level | Time taken for test [secs] | Complete request | Failed request | Total transferred [bytes] | Request per second [#/sec] | Time per request [ms] | Transfer rate [Kb/sec] |
-| :---: |  :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: |  :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | 1 | 1.328 | 1000 | 0 | 122000 | 752.98 | 1.328 | 89.71 |
 | 2 | 10 | 5.437 | 1000 | 0 | 122000 | 183.92 | 5.437 | 21.91 |
 | 3 | 30 | 1.823 | 1000 | 0 | 122000 | 548.66 | 1.823 | 65.37 |
@@ -27,7 +27,7 @@ Perbandingan performa server asyncronous dengan server thread
 ## Hasil pengujian thread server
 
 | No test | Concurrency level | Time taken for test [secs] | Complete request | Failed request | Total transferred [bytes] | Request per second [#/sec] | Time per request [ms] | Transfer rate [Kb/sec] |
-| :---: |  :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: |  :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | 1 | 1132.270 | 1000 | 0 | 122000 | 0.88 | 1132.270 | 0.11 |
 | 2 | 10 | 455.915 | 1000 | 0 | 122000 | 2.19 | 455.915 | 0.26 |
 | 3 | 30 | 492.000 | 1000 | 0 | 122000 | 2.03 | 492.000 | 0.24 |
@@ -58,7 +58,7 @@ Perbandingan performa server asyncronous dengan server thread
 
 ## Screenshot thread server
 - Screenshot thread server konkurensi 1
-<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas9/screenshots/thread_1.jpg" width="600"><br>
+<img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas9/screenshots/thread_1.jpg" width="650"><br>
 - Screenshot thread server konkurensi 10
 <img src="https://github.com/WasilatulDN/PROGJAR_05111740000004/blob/master/tugas9/screenshots/thread_10.jpg" width="600"><br>
 - Screenshot thread server konkurensi 30
